@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #070707;
+}
+
+.container{
+  width: 300px;
+  height: 400px;
+  background-color: #1e1c1c;
+  border-radius: 10px;
+  border: 2px solid #4338ca;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inputbox{
+    width: 100%;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    border: none;
+   
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.inputbox input{
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    outline:none;
+     background-color: #2e2e2e;
+    color: #ffffff;
+}
+.passwordlength{
+
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    font-size: 15px;
+
+}
+#numdrlength{
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    height: 20px;
+    border: 2px solid #fff;
+    outline: none !important;
+
+}
+
+.setting{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:center;
+    
+}
+.passwordoptions{
+    display: flex;
+    align-items:left;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.CHECKBOXINFO{
+    margin: 5px;
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.CHECKBOXINFO input{
+     margin-left: 15px;
+     cursor: pointer;
+     
+}
+.generate{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+     
+}
+.generate button{
+     font-size: 12px;
+    width: 100px;
+    height: 30px;
+      border: none;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+.generate button:hover{
+     transform: ease-in-out !important;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    background-color: #4338ca;
+}
+#copyicon{
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #ffffff; 
+}

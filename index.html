@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGenrater</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="inputbox">
+                <input id="passwordbox" type="text">
+            </div>
+            <div class="setting">
+                <div class="passwordlength">
+                    <label for="length">Password Length:</label>
+                    <input id="numdrlength" type="number" id="length" min="8" max="20" value="12">
+                </div>
+                <div class="passwordoptions">
+                    <div class="CHECKBOXINFO">
+                        <label for="uppercase">Include uppercase letters:</label>
+                        <input  type="checkbox" id="uppercase" checked>
+                    </div>
+                    <div class="CHECKBOXINFO">
+                        <label for="lowercase">Include lowercase letters:</label>
+                        <input type="checkbox" id="lowercase" checked>
+                    </div>
+                    <div class="CHECKBOXINFO">
+                        <label for="numbers">Include numbers:</label>
+                        <input type="checkbox" id="numbers" checked>
+                    </div>
+                    <div class="CHECKBOXINFO">
+                        <label for="symbols">Include symbols:</label>
+                        <input type="checkbox" id="symbols" checked>
+                    </div>
+                    <div class="CHECKBOXINFO">
+                        <label for="specialchars">Include special characters:</label>
+                        <input type="checkbox" id="specialchars" checked>
+                    </div>
+
+                </div>
+                <div class="generate">
+                    <button onclick="generatePassword()">Generate Password</button>
+                    <button id="copy" ><i id="copyicon" class="ri-file-copy-line"></i>copy</button>
+                </div>
+
+            </div>
+            <script src="app.js"></script>
+</body>
+
+</html>
